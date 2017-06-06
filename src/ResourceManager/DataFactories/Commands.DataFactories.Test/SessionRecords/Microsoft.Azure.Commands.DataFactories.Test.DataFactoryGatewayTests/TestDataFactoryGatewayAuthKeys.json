@@ -1,0 +1,2578 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297?api-version=2016-02-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTc/YXBpLXZlcnNpb249MjAxNi0wMi0wMQ==",
+      "RequestMethod": "PUT",
+      "RequestBody": "{\r\n  \"location\": \"Brazil South\"\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Content-Length": [
+          "34"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.Resources.ResourceManagementClient/2.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourceGroups/onesdk5297\",\r\n  \"name\": \"onesdk5297\",\r\n  \"location\": \"brazilsouth\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "178"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1199"
+        ],
+        "x-ms-request-id": [
+          "dc289291-a1c6-43f5-9000-378fe2323fa8"
+        ],
+        "x-ms-correlation-request-id": [
+          "dc289291-a1c6-43f5-9000-378fe2323fa8"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062743Z:dc289291-a1c6-43f5-9000-378fe2323fa8"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:27:43 GMT"
+        ]
+      },
+      "StatusCode": 201
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "PUT",
+      "RequestBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {}\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json"
+        ],
+        "Content-Length": [
+          "74"
+        ],
+        "x-ms-client-request-id": [
+          "a63dff72-86fb-40cd-96d6-3216ccc1d950"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "083fb373-3f7a-4e16-8c9a-a2d197a7edc6"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1198"
+        ],
+        "x-ms-correlation-request-id": [
+          "0b1fb925-820e-46f2-9538-c0c87c32687a"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062751Z:0b1fb925-820e-46f2-9538-c0c87c32687a"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:27:50 GMT"
+        ],
+        "Location": [
+          "https://api-dogfood.resources.windows-int.net/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 201
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "1b8478b6-33b1-4efa-bc7a-a5607522906f"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "1dc6bb86-3e21-4718-a264-afa11707c86a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14893"
+        ],
+        "x-ms-correlation-request-id": [
+          "e965a5d1-97f5-4de9-8e9f-af0a52185ca1"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062751Z:e965a5d1-97f5-4de9-8e9f-af0a52185ca1"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:27:50 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "713d6a76-7347-448a-ab30-e392201cb8d8"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a785db8f-2781-4308-ad29-abf445428d61"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14892"
+        ],
+        "x-ms-correlation-request-id": [
+          "d84b4a86-0478-48a8-86aa-04a4b11a3da9"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062757Z:d84b4a86-0478-48a8-86aa-04a4b11a3da9"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:27:56 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "1e173d5c-56d2-4278-8f60-ca9c80e72f2c"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "b2891a81-2d56-4935-8ee5-fa7b9253835f"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14891"
+        ],
+        "x-ms-correlation-request-id": [
+          "4df5d3cc-c489-4d46-be4c-cecad0ae54db"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062802Z:4df5d3cc-c489-4d46-be4c-cecad0ae54db"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:01 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "cced3994-160b-4f5f-9f37-e04eb18bb4a0"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "3942ea78-21b7-4233-b3c4-d574b274ff96"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14890"
+        ],
+        "x-ms-correlation-request-id": [
+          "e58d4915-8654-4386-a5f7-c64a8f50845c"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062807Z:e58d4915-8654-4386-a5f7-c64a8f50845c"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:07 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "1fcc4984-bb82-47dd-93ce-2794ea8bfd82"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "b220fbe1-dbd9-4ce3-9bb0-918ccd5b6d5f"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14889"
+        ],
+        "x-ms-correlation-request-id": [
+          "51071407-4c5e-4dfa-8140-2575ab2bc495"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062812Z:51071407-4c5e-4dfa-8140-2575ab2bc495"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:12 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "6588e48d-277a-45ea-91f6-d28c11a8a360"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "b0339bd5-7ccd-4b82-97b8-9f4dff25654a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14888"
+        ],
+        "x-ms-correlation-request-id": [
+          "0d32291d-6d6a-4b1a-ab5a-5d47bfe050e3"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062818Z:0d32291d-6d6a-4b1a-ab5a-5d47bfe050e3"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:17 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e7e659fb-088e-473c-9e58-2ad6756d9a9f"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "4a976d14-efca-476c-a721-eb5ead7574bb"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14887"
+        ],
+        "x-ms-correlation-request-id": [
+          "e52f3643-8988-4184-a60f-d610b0fd05ab"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062823Z:e52f3643-8988-4184-a60f-d610b0fd05ab"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:23 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e2556c35-f75f-4dff-8f72-dc4588a67cc8"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "9c08a3e1-b285-4bf9-a294-92dd9f8bbbf6"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14886"
+        ],
+        "x-ms-correlation-request-id": [
+          "3476e96e-b2eb-4e68-96e7-6c3622d8c624"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062828Z:3476e96e-b2eb-4e68-96e7-6c3622d8c624"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:28 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "b4318837-be31-4d0e-a89c-8a55f6ef86bb"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "d2b77c5c-51a3-4149-9f18-2e6ede5cc69d"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14885"
+        ],
+        "x-ms-correlation-request-id": [
+          "b944fe02-db46-4db3-850e-4048f39469b9"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062834Z:b944fe02-db46-4db3-850e-4048f39469b9"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:34 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e11d10d9-195b-41bd-8fe6-dfc36fb937f7"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "8bf5d60d-03ad-44db-b8c7-42a506fe571a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14884"
+        ],
+        "x-ms-correlation-request-id": [
+          "d0fab045-dcdc-4dfa-b62b-eef702cbc4b5"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062839Z:d0fab045-dcdc-4dfa-b62b-eef702cbc4b5"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:39 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e61d3ab3-fd77-4d6a-b042-c8146cf07da1"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "ba4388ff-cb12-4ef5-936c-1c4b4a92acb4"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14883"
+        ],
+        "x-ms-correlation-request-id": [
+          "716535cc-7aec-4732-88d3-103e29be8a85"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062844Z:716535cc-7aec-4732-88d3-103e29be8a85"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:44 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "fd8a6926-81cc-45a4-901c-ce34ed848703"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "11a518c7-034f-4cd7-be16-5b552c8c3fe2"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14882"
+        ],
+        "x-ms-correlation-request-id": [
+          "edd62a51-d515-4c5e-b14c-3deec442f13b"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062850Z:edd62a51-d515-4c5e-b14c-3deec442f13b"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:49 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "0f5d1a79-567c-4f6d-b94b-cf30c52f1946"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "fa88ce1c-72aa-40e1-bd5f-dfd0315252f2"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14881"
+        ],
+        "x-ms-correlation-request-id": [
+          "9213af25-64fe-4aff-a4b7-cfffd5cedf89"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062855Z:9213af25-64fe-4aff-a4b7-cfffd5cedf89"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:28:54 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "f5209473-f8ac-43f4-ab0b-e5e5cb0a7043"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "1a93b908-1f7c-4579-9c6e-361e39c3ea3b"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14880"
+        ],
+        "x-ms-correlation-request-id": [
+          "4f83df47-681d-42d0-969b-f39e4c84de69"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062900Z:4f83df47-681d-42d0-969b-f39e4c84de69"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:00 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e07d6fe1-6fae-48b8-bc98-afdd69901be8"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "60e96cbd-5442-4165-bb29-f17cc5a42f33"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14879"
+        ],
+        "x-ms-correlation-request-id": [
+          "e1db6d30-0ab8-4db4-8fd8-430d3ab788c8"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062905Z:e1db6d30-0ab8-4db4-8fd8-430d3ab788c8"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:05 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "19c9e0f1-ffed-48f1-98e7-f7c599c46a3c"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "ccd4067c-105f-4723-aa26-c9ce878ae58a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14878"
+        ],
+        "x-ms-correlation-request-id": [
+          "80d2d139-6f1f-457e-b1aa-19d0f81369a8"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062911Z:80d2d139-6f1f-457e-b1aa-19d0f81369a8"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:10 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "184e681d-9afe-436b-bb84-3f1c05d4cff2"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "d4dd8d74-4c9d-4660-ad42-a4d3ef869151"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14877"
+        ],
+        "x-ms-correlation-request-id": [
+          "9e48c685-7c01-4200-8f3f-c273bd8edb46"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062916Z:9e48c685-7c01-4200-8f3f-c273bd8edb46"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:16 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "cc071e95-0119-4dab-940b-057989d7d5ae"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "2143cea1-b547-4f3f-a657-7a080d0a9919"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14876"
+        ],
+        "x-ms-correlation-request-id": [
+          "4e2da49c-82a5-482a-9e5b-1760aacb9e45"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062921Z:4e2da49c-82a5-482a-9e5b-1760aacb9e45"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:20 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "2f12a79d-7dd8-4420-bc27-9e49ff4af13b"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "b93242fa-c215-4f53-a047-0f1460c3f74b"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14874"
+        ],
+        "x-ms-correlation-request-id": [
+          "469fba53-d9d8-49a7-bae3-3b9858fc0489"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062927Z:469fba53-d9d8-49a7-bae3-3b9858fc0489"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:26 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "2fa23d89-2daa-405d-a829-cca77cdf0ced"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "c17d5d5d-b56e-4170-9bac-356e9c44a184"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14873"
+        ],
+        "x-ms-correlation-request-id": [
+          "a04a34df-c0b0-4495-a0b8-7049a98d6f68"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062932Z:a04a34df-c0b0-4495-a0b8-7049a98d6f68"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:31 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e7f796c4-e7cd-46dc-b253-5f6cf76bd46d"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "ba91d71e-4a57-4e8b-8bd4-e222437b8548"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14872"
+        ],
+        "x-ms-correlation-request-id": [
+          "1c074bb1-6d90-47a7-bb6b-6f621eef75e8"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062937Z:1c074bb1-6d90-47a7-bb6b-6f621eef75e8"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:36 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "6a5ae670-6e55-411c-aa90-0a1280b9e100"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "53fe6cb7-84d9-44d0-b0e5-539b7a6efdb1"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14871"
+        ],
+        "x-ms-correlation-request-id": [
+          "05a1e7e6-d486-4084-85c3-8a96aa36c697"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062942Z:05a1e7e6-d486-4084-85c3-8a96aa36c697"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:41 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "cb94fafb-7860-42b5-934c-a73489623a25"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "bc5321df-8894-4bec-bd4c-a01e7a4066c5"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14870"
+        ],
+        "x-ms-correlation-request-id": [
+          "8ade6625-fb2c-408e-b027-850050ea9659"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062948Z:8ade6625-fb2c-408e-b027-850050ea9659"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:47 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "a29ebe02-bbd0-4d45-ac69-511fb790b32f"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "14fd3953-67c6-4632-b8a5-c4e48f889b11"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14869"
+        ],
+        "x-ms-correlation-request-id": [
+          "870c786e-2ba8-46f5-a3e6-b6d5a142f0a1"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062953Z:870c786e-2ba8-46f5-a3e6-b6d5a142f0a1"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:53 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "57a7f4f8-fe80-4726-94bd-9555454b5cbd"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "99cc21b6-effc-429f-a43a-b6cdcb9913ce"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14868"
+        ],
+        "x-ms-correlation-request-id": [
+          "73e643fa-2f4f-4a6c-a493-7e96e270f76f"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T062958Z:73e643fa-2f4f-4a6c-a493-7e96e270f76f"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:29:58 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e322ab53-5abf-4159-9e73-db4db6c4c968"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "28d693e3-c5bd-4d5f-b3fd-0991cc85019c"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14877"
+        ],
+        "x-ms-correlation-request-id": [
+          "8b2ebed3-bb6a-4a21-88a3-6e7a85ed41c7"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063004Z:8b2ebed3-bb6a-4a21-88a3-6e7a85ed41c7"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:04 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "35c1d5d1-190e-438d-bd36-7fefe2d4ca1c"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "e7295644-201f-4d5b-bfb7-b3fdfef3f98a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14876"
+        ],
+        "x-ms-correlation-request-id": [
+          "bb0715b5-0b63-4bfd-aeae-0995239c5e7a"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063009Z:bb0715b5-0b63-4bfd-aeae-0995239c5e7a"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:08 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "aaa56aad-798f-4621-8581-aeb9c49f6c02"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "bded3323-c9c8-4685-b310-e847aca9b726"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14875"
+        ],
+        "x-ms-correlation-request-id": [
+          "30ed6efe-e3b5-453e-850b-079bfbd18148"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063014Z:30ed6efe-e3b5-453e-850b-079bfbd18148"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:13 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "92db4161-f3a2-4a0c-9bab-36b1da38c70b"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "ea80ff3d-1bef-4961-8ed1-1aea5333baa1"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14874"
+        ],
+        "x-ms-correlation-request-id": [
+          "b06b22ab-10f1-4e1c-9c8d-f417466afe11"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063019Z:b06b22ab-10f1-4e1c-9c8d-f417466afe11"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:19 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "8f770986-49f5-454a-9b72-725033913bff"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "69711dd8-9272-48c3-80db-0ffa21420c92"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14873"
+        ],
+        "x-ms-correlation-request-id": [
+          "a8e10781-7ef9-47a4-8014-e3abaa1024cb"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063025Z:a8e10781-7ef9-47a4-8014-e3abaa1024cb"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:24 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "eaf0f6ae-1abb-4a7a-9c77-c2171f5ad972"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"PendingCreation\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "449"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "9b589d35-fecc-47be-a728-84577ba29109"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14871"
+        ],
+        "x-ms-correlation-request-id": [
+          "5edbc3c1-b990-4e91-a2ab-e44741bdc1e3"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063030Z:5edbc3c1-b990-4e91-a2ab-e44741bdc1e3"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:29 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "c32c8a1b-7aca-4df3-9097-71b44db826ed"
+        ],
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"onesdk1996\",\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996\",\r\n  \"type\": \"Microsoft.DataFactory/datafactories\",\r\n  \"location\": \"Brazil South\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"dataFactoryId\": \"30994a22-8dd0-4545-8110-2f6f7ffd7299\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"error\": null,\r\n    \"errorMessage\": null\r\n  }\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "443"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "0ad2010f-db9d-4fd2-b8d0-6b57e39e640d"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14870"
+        ],
+        "x-ms-correlation-request-id": [
+          "8e41519c-2a82-48b1-8993-a859b3eaf0e0"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063035Z:8e41519c-2a82-48b1-8993-a859b3eaf0e0"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:35 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "4d9dbda6-0fe9-4b98-8e0a-7af3884521f0"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"message\": \"Gateway '' does not exist.\",\r\n  \"code\": \"GatewayNotFound\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "65"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "0173f900-e68a-4142-a6a7-5c5ef9041b40"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14869"
+        ],
+        "x-ms-correlation-request-id": [
+          "c7f870d5-de3f-46b8-acbf-accb671c3935"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063036Z:c7f870d5-de3f-46b8-acbf-accb671c3935"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:36 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 404
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "0759be51-4f8e-4a6d-a591-a900fcd6b2c9"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"foo\",\r\n  \"properties\": {\r\n    \"dataFactoryName\": \"onesdk1996\",\r\n    \"status\": \"NeedRegistration\",\r\n    \"versionStatus\": \"None\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"createTime\": \"2017-06-06T06:30:35.8817448Z\",\r\n    \"multiNodeSupportEnabled\": false,\r\n    \"nodes\": [],\r\n    \"isCredentailSyncFailed\": false\r\n  },\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "416"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "c8f08fc0-7d5f-4cd3-8301-71d1b135e34e"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14868"
+        ],
+        "x-ms-correlation-request-id": [
+          "1f6d1f45-19e8-47bc-8b91-d759a876642e"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063039Z:1f6d1f45-19e8-47bc-8b91-d759a876642e"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:38 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "PUT",
+      "RequestBody": "{\r\n  \"name\": \"foo\",\r\n  \"properties\": {}\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json"
+        ],
+        "Content-Length": [
+          "42"
+        ],
+        "x-ms-client-request-id": [
+          "1637a003-6992-456b-a158-d9785f423f28"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"foo\",\r\n  \"properties\": {\r\n    \"key\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@gwqRv1z6owcaRqqIfJppeH81MRTxdVxhgeq/POcsvmc=\",\r\n    \"authenticationKey1\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@gwqRv1z6owcaRqqIfJppeH81MRTxdVxhgeq/POcsvmc=\",\r\n    \"authenticationKey2\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@4FHVbAA7SzCFzv5z7rtGyofLDD3Dq88PkH6aJbizRV8=\",\r\n    \"dataFactoryName\": \"onesdk1996\",\r\n    \"status\": \"NeedRegistration\",\r\n    \"versionStatus\": \"None\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"createTime\": \"2017-06-06T06:30:35.8817448Z\",\r\n    \"multiNodeSupportEnabled\": false,\r\n    \"nodes\": [],\r\n    \"isCredentailSyncFailed\": false\r\n  },\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "848"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "5c371d36-992f-4442-8859-5b57220ed948"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1197"
+        ],
+        "x-ms-correlation-request-id": [
+          "52d85373-1a0d-4b14-bdd5-5bb85b668439"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063038Z:52d85373-1a0d-4b14-bdd5-5bb85b668439"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:38 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/listauthkeys?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vL2xpc3RhdXRoa2V5cz9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "POST",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "0301eab0-c5bc-4a47-b489-0db13e7c125f"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"key1\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@gwqRv1z6owcaRqqIfJppeH81MRTxdVxhgeq/POcsvmc=\",\r\n  \"key2\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@4FHVbAA7SzCFzv5z7rtGyofLDD3Dq88PkH6aJbizRV8=\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "271"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "6ca1f09f-9a3f-4659-9f57-dd40f891fdc7"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1196"
+        ],
+        "x-ms-correlation-request-id": [
+          "dae89d14-c8a9-4be6-ba65-c7cf7a8eb2f9"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063040Z:dae89d14-c8a9-4be6-ba65-c7cf7a8eb2f9"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:39 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/regenerateauthkey?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vL3JlZ2VuZXJhdGVhdXRoa2V5P2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "POST",
+      "RequestBody": "{\r\n  \"keyname\": \"key2\"\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json"
+        ],
+        "Content-Length": [
+          "25"
+        ],
+        "x-ms-client-request-id": [
+          "30fd5444-26e8-4547-bbe2-8928478a7f79"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"key2\": \"DMG@d807a353-5013-49c6-927e-b269fb084822@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@sTTSqPMNC4ZSRmiGiHMOWOySDJo9fKZf009iyS5jy7U=\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "136"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "64b7ed52-0d2d-447f-bcc4-4f0d0ec353bc"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1195"
+        ],
+        "x-ms-correlation-request-id": [
+          "3b7d3309-61cc-4956-94d3-934e5000ee23"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063040Z:3b7d3309-61cc-4956-94d3-934e5000ee23"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:40 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "DELETE",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "dd4cdbb6-59af-4976-8d91-4ebd0f09c772"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Retry-After": [
+          "15"
+        ],
+        "x-ms-request-id": [
+          "1e30c245-74c0-49a5-be6d-915643da037a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1194"
+        ],
+        "x-ms-correlation-request-id": [
+          "2a4c15b5-7ddd-4406-8c92-af659b1d5d36"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063041Z:2a4c15b5-7ddd-4406-8c92-af659b1d5d36"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:40 GMT"
+        ],
+        "Location": [
+          "https://api-dogfood.resources.windows-int.net/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/operationresults/Dd807a353-5013-49c6-927e-b269fb084822?api-version=2015-10-01"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 202
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/operationresults/Dd807a353-5013-49c6-927e-b269fb084822?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vL29wZXJhdGlvbnJlc3VsdHMvRGQ4MDdhMzUzLTUwMTMtNDljNi05MjdlLWIyNjlmYjA4NDgyMj9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Retry-After": [
+          "15"
+        ],
+        "x-ms-request-id": [
+          "4dd6292f-4faa-4091-97e5-8e441786c84c"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14867"
+        ],
+        "x-ms-correlation-request-id": [
+          "fe10c913-47e7-4730-b7b9-c9ab0271f8ef"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063042Z:fe10c913-47e7-4730-b7b9-c9ab0271f8ef"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:41 GMT"
+        ],
+        "Location": [
+          "https://api-dogfood.resources.windows-int.net/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/operationresults/Dd807a353-5013-49c6-927e-b269fb084822?api-version=2015-10-01"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 202
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996/gateways/foo/operationresults/Dd807a353-5013-49c6-927e-b269fb084822?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTYvZ2F0ZXdheXMvZm9vL29wZXJhdGlvbnJlc3VsdHMvRGQ4MDdhMzUzLTUwMTMtNDljNi05MjdlLWIyNjlmYjA4NDgyMj9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-version": [
+          "2015-10-01"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "3c889307-ebfc-40d3-b50d-553a26de2c28"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14866"
+        ],
+        "x-ms-correlation-request-id": [
+          "e97709ad-bd2e-423d-a895-a6cbae603cb7"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063057Z:e97709ad-bd2e-423d-a895-a6cbae603cb7"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:30:57 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/onesdk5297/providers/Microsoft.DataFactory/datafactories/onesdk1996?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL29uZXNkazUyOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5EYXRhRmFjdG9yeS9kYXRhZmFjdG9yaWVzL29uZXNkazE5OTY/YXBpLXZlcnNpb249MjAxNS0xMC0wMQ==",
+      "RequestMethod": "DELETE",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "cf219f60-d320-4f51-8693-04dccfea9db8"
+        ],
+        "User-Agent": [
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementClient/4.0.0.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "cb563853-06a4-4ce8-9f7c-befde930e417"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1193"
+        ],
+        "x-ms-correlation-request-id": [
+          "8c22c903-9579-4cef-9798-810fb307295f"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTEUROPE:20170606T063104Z:8c22c903-9579-4cef-9798-810fb307295f"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Tue, 06 Jun 2017 06:31:03 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    }
+  ],
+  "Names": {
+    "Test-DataFactoryGatewayAuthKeys": [
+      "onesdk1996",
+      "onesdk5297"
+    ]
+  },
+  "Variables": {
+    "SubscriptionId": "41fcbc45-c594-4152-a8f1-fcbcd6452aea"
+  }
+}

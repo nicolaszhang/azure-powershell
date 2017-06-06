@@ -83,5 +83,20 @@ namespace Microsoft.Azure.Commands.DataFactories
 
             return new PSDataFactoryGatewayKey(response.Key);
         }
+
+        public virtual PSDataFactoryGatewayAuthKeys RegenerateGatewayAuthKey(string resourceGroupName,
+            string dataFactoryName, string gatewayName, NewDataFactoryGatewayAuthKeyParameters parameters)
+        {
+            var param = new GatewayRegenerateAuthKeyParameters(parameters.KeyName);
+            var response = DataPipelineManagementClient.Gateways.RegenerateAuthKey(resourceGroupName, dataFactoryName, gatewayName, param);
+
+            return new PSDataFactoryGatewayAuthKeys(response.Key1, response.Key2);
+        }
+
+        public virtual PSDataFactoryGatewayAuthKeys ListGatewayAuthKeys(string resourceGroupName, string dataFactoryName, string gatewayName)
+        {
+            var response = DataPipelineManagementClient.Gateways.ListAuthKeys(resourceGroupName, dataFactoryName, gatewayName);
+            return new PSDataFactoryGatewayAuthKeys(response.Key1, response.Key2);
+        }
     }
 }
