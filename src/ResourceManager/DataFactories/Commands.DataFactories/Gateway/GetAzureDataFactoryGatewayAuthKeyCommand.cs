@@ -22,8 +22,8 @@ using System.Security.Permissions;
 
 namespace Microsoft.Azure.Commands.DataFactories
 {
-    [Cmdlet(VerbsCommon.Get, Constants.GatewayAuthKeys, DefaultParameterSetName = ByFactoryName), OutputType(typeof(PSDataFactoryGatewayAuthKeys))]
-    public class GetAzureDataFactoryGatewayAuthKeysCommand : DataFactoryBaseCmdlet
+    [Cmdlet(VerbsCommon.Get, Constants.GatewayAuthKey, DefaultParameterSetName = ByFactoryName), OutputType(typeof(PSDataFactoryGatewayAuthKey))]
+    public class GetAzureDataFactoryGatewayAuthKeyCommand : DataFactoryBaseCmdlet
     {
         [Parameter(ParameterSetName = ByFactoryObject, Position = 0, Mandatory = true, ValueFromPipelineByPropertyName = true,
             HelpMessage = "The data factory object.")]
@@ -53,8 +53,8 @@ namespace Microsoft.Azure.Commands.DataFactories
                 ResourceGroupName = DataFactory.ResourceGroupName;
             }
 
-            PSDataFactoryGatewayAuthKeys authKeys = DataFactoryClient.ListGatewayAuthKeys(ResourceGroupName, DataFactoryName, GatewayName);
-            WriteObject(authKeys);
+            PSDataFactoryGatewayAuthKey authKey = DataFactoryClient.ListGatewayAuthKeys(ResourceGroupName, DataFactoryName, GatewayName);
+            WriteObject(authKey);
         }
     }
 }

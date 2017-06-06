@@ -75,7 +75,7 @@ function Test-DataFactoryGateway
 Create a gateway and then try to get auth keys and new auth keys.
 Delete the created gateway after test finishes.
 #>
-function Test-DataFactoryGatewayAuthKeys
+function Test-DataFactoryGatewayAuthKey
 {
     $dfname = Get-DataFactoryName
     $rgname = Get-ResourceGroupName
@@ -96,7 +96,7 @@ function Test-DataFactoryGatewayAuthKeys
         Assert-AreEqual $actual.Name $expected.Name
         Assert-NotNull $actual.Key
 
-        $key = Get-AzureRmDataFactoryGatewayAuthKeys -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname
+        $key = Get-AzureRmDataFactoryGatewayAuthKey -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname
         Assert-NotNull $key
         Assert-NotNull $key.Key1
         Assert-NotNull $key.Key2

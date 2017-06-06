@@ -149,7 +149,7 @@
     <Compile Include="DataSlices\SaveAzureDataFactoryLog.cs" />
     <Compile Include="DataSlices\SetAzureDataFactorySliceStatusCommand.cs" />
     <Compile Include="Encrypt\NewAzureDataFactoryEncryptValueCommand.cs" />
-    <Compile Include="Gateway\GetAzureDataFactoryGatewayAuthKeysCommand.cs" />
+    <Compile Include="Gateway\GetAzureDataFactoryGatewayAuthKeyCommand.cs" />
     <Compile Include="Gateway\GetAzureDataFactoryGatewayCommand.cs" />
     <Compile Include="Gateway\NewAzureDataFactoryGatewayAuthKeyCommand.cs" />
     <Compile Include="Gateway\NewAzureDataFactoryGatewayCommand.cs" />
@@ -182,7 +182,7 @@
     <Compile Include="Models\PipelineFilterOptions.cs" />
     <Compile Include="Models\DataSliceFilterOptions.cs" />
     <Compile Include="Models\PSActivityWindow.cs" />
-    <Compile Include="Models\PSDataFactoryGatewayAuthKeys.cs" />
+    <Compile Include="Models\PSDataFactoryGatewayAuthKey.cs" />
     <Compile Include="Models\NewDataFactoryGatewayAuthKeyParameters.cs" />
     <Compile Include="ProvisioningFailedException.cs" />
     <Compile Include="Models\PSDataSlice.cs" />

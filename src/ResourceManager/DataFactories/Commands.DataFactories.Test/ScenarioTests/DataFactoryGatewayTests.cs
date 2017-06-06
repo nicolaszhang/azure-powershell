@@ -38,9 +38,9 @@ namespace Microsoft.Azure.Commands.DataFactories.Test
         }
 
         [Fact]
-        public void TestDataFactoryGatewayAuthKeys()
+        public void TestDataFactoryGatewayAuthKey()
         {
-            RunPowerShellTest("Test-DataFactoryGatewayAuthKeys");
+            RunPowerShellTest("Test-DataFactoryGatewayAuthKey");
         }
 
         [Fact(Skip = "test takes too long (more than 5 sec)")]

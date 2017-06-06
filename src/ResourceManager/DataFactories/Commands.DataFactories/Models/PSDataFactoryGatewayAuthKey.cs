@@ -14,12 +14,12 @@
 
 namespace Microsoft.Azure.Commands.DataFactories.Models
 {
-    public class PSDataFactoryGatewayAuthKeys
+    public class PSDataFactoryGatewayAuthKey
     {
         private string _key1;
         private string _key2;
 
-        public PSDataFactoryGatewayAuthKeys(string key1, string key2)
+        public PSDataFactoryGatewayAuthKey(string key1, string key2)
         {
             _key1 = key1;
             _key2 = key2;
