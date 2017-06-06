@@ -19,11 +19,9 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.DataFactories
 {
-    [Cmdlet(VerbsCommon.New, Constants.GatewayAuthKey, DefaultParameterSetName = ByFactoryName), OutputType(typeof(PSDataFactoryGatewayAuthKeys))]
+    [Cmdlet(VerbsCommon.New, Constants.GatewayAuthKeys, DefaultParameterSetName = ByFactoryName), OutputType(typeof(PSDataFactoryGatewayAuthKeys))]
     public class NewAzureDataFactoryGatewayAuthKeyCommand : DataFactoryBaseCmdlet
     {
-        protected const string ByKeyParametersObject = "ByKeyParametersObject";
-
         [Parameter(ParameterSetName = ByFactoryObject, Position = 0, Mandatory = true, ValueFromPipelineByPropertyName = true,
             HelpMessage = "The data factory object.")]
         public PSDataFactory DataFactory { get; set; }
@@ -38,10 +36,10 @@ namespace Microsoft.Azure.Commands.DataFactories
         [ValidateNotNullOrEmpty]
         public string GatewayName { get; set; }
 
-        [Parameter(ParameterSetName = ByKeyParametersObject, Position = 3, Mandatory = true, ValueFromPipelineByPropertyName = true,
-            HelpMessage = "The gateway auth key parameters object.")]
+        [Parameter(Position = 3, Mandatory = true, ValueFromPipelineByPropertyName = true,
+            HelpMessage = "The name of gateway auth key to be regenerated, either 'key1' or 'key2'.")]
         [ValidateNotNullOrEmpty]
-        public NewDataFactoryGatewayAuthKeyParameters GatewayAuthKeyParameters { get; set; }
+        public string KeyName { get; set; }
         
         public override void ExecuteCmdlet()
         {
@@ -56,7 +54,12 @@ namespace Microsoft.Azure.Commands.DataFactories
                 ResourceGroupName = DataFactory.ResourceGroupName;
             }
 
-            PSDataFactoryGatewayAuthKeys gatewayKey = DataFactoryClient.RegenerateGatewayAuthKey(ResourceGroupName, DataFactoryName, GatewayName, GatewayAuthKeyParameters);
+            NewDataFactoryGatewayAuthKeyParameters param = new NewDataFactoryGatewayAuthKeyParameters()
+            {
+                KeyName = KeyName
+            };
+
+            PSDataFactoryGatewayAuthKeys gatewayKey = DataFactoryClient.RegenerateGatewayAuthKey(ResourceGroupName, DataFactoryName, GatewayName, param);
             WriteObject(gatewayKey);
         }
     }

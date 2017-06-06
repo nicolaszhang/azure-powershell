@@ -72,6 +72,50 @@ function Test-DataFactoryGateway
 
 <#
 .SYNOPSIS
+Create a gateway and then do a Get to compare the result are identical.
+Delete the created gateway after test finishes.
+#>
+function Test-DataFactoryGatewayAuthKeys
+{
+    $dfname = Get-DataFactoryName
+    $rgname = Get-ResourceGroupName
+    $rglocation = Get-ProviderLocation ResourceManagement
+    $dflocation = Get-ProviderLocation DataFactoryManagement
+        
+    New-AzureRmResourceGroup -Name $rgname -Location $rglocation -Force
+
+    try
+    {
+        New-AzureRmDataFactory -ResourceGroupName $rgname -Name $dfname -Location $dflocation -Force
+     
+        $gwname = "foo"
+        $description = "description"
+   
+        $actual = New-AzureRmDataFactoryGateway -ResourceGroupName $rgname -DataFactoryName $dfname -Name $gwname
+        $expected = Get-AzureRmDataFactoryGateway -ResourceGroupName $rgname -DataFactoryName $dfname -Name $gwname
+        Assert-AreEqual $actual.Name $expected.Name
+		Assert-NotNull $actual.Key
+
+        $key = Get-AzureRmDataFactoryGatewayAuthKeys -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname
+        Assert-NotNull $key
+        Assert-NotNull $key.Key1
+		Assert-NotNull $key.Key2
+
+		$keyName = 'key2'
+		$newKey = New-AzureRmDataFactoryGatewayAuthKeys -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname -KeyName $keyName
+		Assert-NotNull $key.Key2
+		Assert-AreNotEqual $key.Key2 $newKey.Key2
+
+        Remove-AzureRmDataFactoryGateway -ResourceGroupName $rgname -DataFactoryName $dfname -Name $gwname -Force
+    }
+    finally
+    {
+        Clean-DataFactory $rgname $dfname
+    }
+}
+
+<#
+.SYNOPSIS
 Use the datafactory parameter to create a gateway and then do a Get to compare the result are identical.
 Delete the created gateway after test finishes.
 #>
