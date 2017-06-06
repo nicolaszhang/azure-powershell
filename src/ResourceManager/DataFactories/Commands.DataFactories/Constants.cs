@@ -32,6 +32,8 @@ namespace Microsoft.Azure.Commands.DataFactories
 
         public const string GatewayAuthKeys = "AzureRmDataFactoryGatewayAuthKeys";
 
+        public const string GatewayAuthKey = "AzureRmDataFactoryGatewayAuthKey";
+
         public const string EncryptString = "AzureRmDataFactoryEncryptValue";
 
         public const string Dataset = "AzureRmDataFactoryDataset";

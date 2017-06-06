@@ -102,7 +102,7 @@ function Test-DataFactoryGatewayAuthKeys
         Assert-NotNull $key.Key2
 
         $keyName = 'key2'
-        $newKey = New-AzureRmDataFactoryGatewayAuthKeys -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname -KeyName $keyName
+        $newKey = New-AzureRmDataFactoryGatewayAuthKey -ResourceGroupName $rgname -DataFactoryName $dfname -GatewayName $gwname -KeyName $keyName
         Assert-NotNull $key.Key2
         Assert-AreNotEqual $key.Key2 $newKey.Key2
 
