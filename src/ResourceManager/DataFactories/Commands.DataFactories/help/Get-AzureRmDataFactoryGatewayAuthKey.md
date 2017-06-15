@@ -14,12 +14,13 @@ Gets gateway auth key for an Azure Data Factory.
 ### ByFactoryName (Default)
 ```
 Get-AzureRmDataFactoryGatewayAuthKey [-DataFactoryName] <String> [-GatewayName] <String>
- [-ResourceGroupName] <String>
+ [-ResourceGroupName] <String> [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
 Get-AzureRmDataFactoryGatewayAuthKey [-DataFactory] <PSDataFactory> [-GatewayName] <String>
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -101,20 +102,23 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 System.String
 
-
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
-
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories
 
 ## RELATED LINKS
+
+[New-AzureRmDataFactoryGateway](./New-AzureRmDataFactoryGateway.md)
 [New-AzureRmDataFactoryGatewayAuthKey](./New-AzureRmDataFactoryGatewayAuthKey.md)
 
