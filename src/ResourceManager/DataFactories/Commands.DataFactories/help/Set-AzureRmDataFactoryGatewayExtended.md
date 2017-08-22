@@ -24,7 +24,7 @@ Set-AzureRmDataFactoryGatewayExtended [-InputObject] <PSDataFactory> [-Name] <St
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+The command **Set-AzureRmDataFactoryGatewayExtended** sets the description or scheduled upgrade time for a gateway in Azure Data Factory.
 
 ## EXAMPLES
 

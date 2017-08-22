@@ -13,10 +13,8 @@
 // ----------------------------------------------------------------------------------
 
 using Microsoft.Azure.Commands.DataFactories.Models;
-using Microsoft.Azure.Commands.DataFactories.Properties;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Management.Automation;
 using System.Security.Permissions;
 
@@ -26,7 +24,7 @@ namespace Microsoft.Azure.Commands.DataFactories
     public class GetAzureDataFactoryGatewayExtendedCommand : DataFactoryBaseCmdlet
     {
         [Parameter(ParameterSetName = ByFactoryObject, Position = 0, Mandatory = true, ValueFromPipeline = true,
-HelpMessage = "The data factory object.")]
+            HelpMessage = "The data factory object.")]
         [Alias("DataFactory")]
         [ValidateNotNull]
         public PSDataFactory InputObject { get; set; }

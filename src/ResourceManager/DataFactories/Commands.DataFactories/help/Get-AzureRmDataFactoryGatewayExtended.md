@@ -14,12 +14,12 @@ Gets information about logical (multi-nodes) gateways in Azure Data Factory.
 ### ByFactoryName (Default)
 ```
 Get-AzureRmDataFactoryGatewayExtended [-DataFactoryName] <String> [[-Name] <String>]
- [-ResourceGroupName] <String>
+ [-ResourceGroupName] <String> [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
-Get-AzureRmDataFactoryGatewayExtended [-InputObject] <PSDataFactory> [[-Name] <String>]
+Get-AzureRmDataFactoryGatewayExtended [-InputObject] <PSDataFactory> [[-Name] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -193,6 +193,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -201,7 +204,7 @@ System.String
 
 ## OUTPUTS
 
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayExtended, Microsoft.Azure.Commands.DataFactories, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayExtended]]
 Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayExtended
 
 
