@@ -23,11 +23,16 @@ namespace Microsoft.Azure.Commands.DataFactories
     public partial class DataFactoryClient
     {
         public IDataFactoryManagementClient DataPipelineManagementClient { get; private set; }
+        public IDataFactoryManagementExtendedClient DataFactoryManagementExtendedClient { get; private set; }
 
         public DataFactoryClient(IAzureContext context)
         {
             DataPipelineManagementClient = AzureSession.Instance.ClientFactory.CreateClient<DataFactoryManagementClient>(
                 context, AzureEnvironment.Endpoint.ResourceManager);
+
+            DataFactoryManagementExtendedClient = AzureSession.Instance.ClientFactory.CreateArmClient<DataFactoryManagementExtendedClient>(
+                context, AzureEnvironment.Endpoint.ResourceManager);
+
         }
 
         /// <summary>

@@ -18,11 +18,12 @@ using Microsoft.Azure.Management.Authorization;
 using Microsoft.Azure.Management.DataFactories;
 using Microsoft.Azure.Management.Resources;
 using Microsoft.Azure.Subscriptions;
-using Microsoft.Azure.Test;
 using Microsoft.Azure.Test.HttpRecorder;
+using Microsoft.Rest.ClientRuntime.Azure.TestFramework;
 using Microsoft.WindowsAzure.Commands.ScenarioTest;
 using Microsoft.WindowsAzure.Commands.Test.Utilities.Common;
 using System.Collections.Generic;
+using LegacyTest = Microsoft.Azure.Test;
 
 namespace Microsoft.Azure.Commands.DataFactories.Test
 {
@@ -35,15 +36,17 @@ namespace Microsoft.Azure.Commands.DataFactories.Test
             helper = new EnvironmentSetupHelper();
         }
 
-        protected void SetupManagementClients()
+        protected void SetupManagementClients(MockContext context)
         {
             var dataPipelineManagementClient = GetDataPipelineManagementClient();
+            var dataPipelineManagementClientExtended = GetDataPipelineManagementExtendedClient(context);
             var resourceManagementClient = GetResourceManagementClient();
             var subscriptionsClient = GetSubscriptionClient();
             var galleryClient = GetGalleryClient();
             var authorizationManagementClient = GetAuthorizationManagementClient();
 
             helper.SetupManagementClients(dataPipelineManagementClient,
+                dataPipelineManagementClientExtended,
                 resourceManagementClient,
                 subscriptionsClient,
                 galleryClient,
@@ -60,11 +63,9 @@ namespace Microsoft.Azure.Commands.DataFactories.Test
             providersToIgnore.Add("Microsoft.Azure.Management.Resources.ResourceManagementClient", "2016-02-01");
             HttpMockServer.Matcher = new PermissiveRecordMatcherWithApiExclusion(true, d, providersToIgnore);
 
-            using (UndoContext context = UndoContext.Current)
+            using (MockContext context = MockContext.Start(TestUtilities.GetCallingClass(2), TestUtilities.GetCurrentMethodName(2)))
             {
-                context.Start(TestUtilities.GetCallingClass(2), TestUtilities.GetCurrentMethodName(2));
-
-                SetupManagementClients();
+                SetupManagementClients(context);
 
                 helper.SetupEnvironment(AzureModule.AzureResourceManager);
                 helper.SetupModules(AzureModule.AzureResourceManager,
@@ -81,27 +82,33 @@ namespace Microsoft.Azure.Commands.DataFactories.Test
 
         protected DataFactoryManagementClient GetDataPipelineManagementClient()
         {
-            return TestBase.GetServiceClient<DataFactoryManagementClient>(new CSMTestEnvironmentFactory());
+            return LegacyTest.TestBase.GetServiceClient<DataFactoryManagementClient>(new LegacyTest.CSMTestEnvironmentFactory());
+        }
+
+        protected DataFactoryManagementExtendedClient GetDataPipelineManagementExtendedClient(MockContext context)
+        {
+
+            return context.GetServiceClient<DataFactoryManagementExtendedClient>();
         }
 
         protected ResourceManagementClient GetResourceManagementClient()
         {
-            return TestBase.GetServiceClient<ResourceManagementClient>(new CSMTestEnvironmentFactory());
+            return LegacyTest.TestBase.GetServiceClient<ResourceManagementClient>(new LegacyTest.CSMTestEnvironmentFactory());
         }
 
         protected SubscriptionClient GetSubscriptionClient()
         {
-            return TestBase.GetServiceClient<SubscriptionClient>(new CSMTestEnvironmentFactory());
+            return LegacyTest.TestBase.GetServiceClient<SubscriptionClient>(new LegacyTest.CSMTestEnvironmentFactory());
         }
 
         protected GalleryClient GetGalleryClient()
         {
-            return TestBase.GetServiceClient<GalleryClient>(new CSMTestEnvironmentFactory());
+            return LegacyTest.TestBase.GetServiceClient<GalleryClient>(new LegacyTest.CSMTestEnvironmentFactory());
         }
 
         protected AuthorizationManagementClient GetAuthorizationManagementClient()
         {
-            return TestBase.GetServiceClient<AuthorizationManagementClient>(new CSMTestEnvironmentFactory());
+            return LegacyTest.TestBase.GetServiceClient<AuthorizationManagementClient>(new LegacyTest.CSMTestEnvironmentFactory());
         }
     }
 }

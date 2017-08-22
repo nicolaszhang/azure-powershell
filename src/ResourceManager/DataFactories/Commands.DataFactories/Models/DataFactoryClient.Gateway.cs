@@ -65,6 +65,39 @@ namespace Microsoft.Azure.Commands.DataFactories
             return response.Gateways.Select(gateway => new PSDataFactoryGateway(gateway)).ToList();
         }
 
+        public virtual List<PSDataFactoryGatewayExtended> ListGatewaysExtended(string resourceGroupName, string dataFactoryName)
+        {
+            var response = DataFactoryManagementExtendedClient.GatewaysExtended.List(resourceGroupName, dataFactoryName);
+            return response.Select(gateway => new PSDataFactoryGatewayExtended(gateway)).ToList();
+        }
+
+        public virtual PSDataFactoryGatewayExtended GetGatewayExtended(string resourceGroupName, string dataFactoryName, string gatewayName)
+        {
+            var response = DataFactoryManagementExtendedClient.GatewaysExtended.Get(resourceGroupName, dataFactoryName, gatewayName);
+            return new PSDataFactoryGatewayExtended(response);
+        }
+
+        public virtual PSDataFactoryGatewayExtended UpdateGatewayExtended(string resourceGroupName, string dataFactoryName, string gatewayName, PSDataFactoryGatewayExtended gateway)
+        {
+            var response = DataFactoryManagementExtendedClient.GatewaysExtended.Update(resourceGroupName, dataFactoryName, gatewayName, gateway.ToGatewayDefinition());
+            return new PSDataFactoryGatewayExtended(response);
+        }
+
+        public virtual void ForceCredentialSync(string resourceGroupName, string dataFactoryName, string gatewayName)
+        {
+            DataFactoryManagementExtendedClient.GatewaysExtended.ForceSyncCredential(resourceGroupName, dataFactoryName, gatewayName);
+        }
+
+        public virtual void UpdateGatewayExtendedNode(string resourceGroupName, string dataFactoryName, string gatewayName, SetPSGatewayExtendedNodeParameters param)
+        {
+            DataFactoryManagementExtendedClient.GatewaysExtended.UpdateNode(resourceGroupName, dataFactoryName, gatewayName, param.ToGatewayExtendedUpdateNodeParameters());
+        }
+
+        public virtual void DeleteGatewayExtendedNode(string resourceGroupName, string dataFactoryName, string gatewayName, DeletePSGatewayExtendedNodeParameters param)
+        {
+            DataFactoryManagementExtendedClient.GatewaysExtended.DeleteNode(resourceGroupName, dataFactoryName, gatewayName, param.ToGatewayExtendedDeleteNodeParameters());
+        }
+
         public virtual PSDataFactoryGateway GetGateway(string resourceGroupName, string dataFactoryName, string gatewayName)
         {
             var response = DataPipelineManagementClient.Gateways.Get(resourceGroupName, dataFactoryName, gatewayName);

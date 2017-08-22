@@ -18,6 +18,7 @@
         - Additional information about change #1
 -->
 ## Current Release
+* Add commands to operate on multi-nodes gateway.
 
 ## Version 3.2.1
 
