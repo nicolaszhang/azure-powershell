@@ -14,13 +14,13 @@ Sets the limit of concurrent jobs for the specified gateway node in Azure Data F
 ### ByFactoryName (Default)
 ```
 Set-AzureRmDataFactoryGatewayExtendedNode [-DataFactoryName] <String> [-GatewayName] <String> [-Name] <String>
- [-LimitConcurrentJobs] <Int32> [-ResourceGroupName] <String> [-WhatIf] [-Confirm]
+ [-LimitConcurrentJobs] <Int32> [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
 Set-AzureRmDataFactoryGatewayExtendedNode [-InputObject] <PSDataFactory> [-GatewayName] <String>
- [-Name] <String> [-LimitConcurrentJobs] <Int32> [-WhatIf] [-Confirm]
+ [-Name] <String> [-LimitConcurrentJobs] <Int32> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,21 +37,6 @@ True
 This command sets the limit of concurrent jobs to 19 for Node1 of the logical gateway named Gateway1 in the data factory named TestADF in the resource group named ADFResource.
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DataFactoryName
 The data factory name.
@@ -143,6 +128,21 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -159,16 +159,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 System.String
 
-
 ## OUTPUTS
 
 ### System.Boolean
-
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories

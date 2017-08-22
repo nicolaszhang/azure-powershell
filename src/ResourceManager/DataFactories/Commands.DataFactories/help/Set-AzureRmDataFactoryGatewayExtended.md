@@ -14,13 +14,13 @@ Sets the description or scheduled upgrade time for a gateway in Azure Data Facto
 ### ByFactoryName (Default)
 ```
 Set-AzureRmDataFactoryGatewayExtended [-DataFactoryName] <String> [-Name] <String> [[-Description] <String>]
- [[-ScheduledUpgradeTime] <String>] [-ResourceGroupName] <String> [-WhatIf] [-Confirm]
+ [[-ScheduledUpgradeTime] <String>] [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
 Set-AzureRmDataFactoryGatewayExtended [-InputObject] <PSDataFactory> [-Name] <String> [[-Description] <String>]
- [[-ScheduledUpgradeTime] <String>] [-WhatIf] [-Confirm]
+ [[-ScheduledUpgradeTime] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,27 +61,11 @@ NodeCommunicationChannelEncryptionMode : NonEncryption
 Nodes                                  : {Node1, Node2}
 Id                                     : /subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/ADFResource
                                          /providers/Microsoft.DataFactory/datafactories/TestADF/gateways/Gateway1
-
 ```
 
 This command sets the scheduled upgrade time to "09:19:29" for the gateway named "Gateway1" in the data factory named "TestADF".
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DataFactoryName
 The data factory name.
@@ -173,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -189,16 +188,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 System.String
 
-
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayExtended
-
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories

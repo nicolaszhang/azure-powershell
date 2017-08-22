@@ -14,13 +14,13 @@ Removes specified node from the gateway in the Azure Data Factory.
 ### ByFactoryName (Default)
 ```
 Remove-AzureRmDataFactoryGatewayExtendedNode [-DataFactoryName] <String> [-GatewayName] <String>
- [-Name] <String> [-Force] [-ResourceGroupName] <String> [-WhatIf] [-Confirm]
+ [-Name] <String> [-Force] [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
 Remove-AzureRmDataFactoryGatewayExtendedNode [-InputObject] <PSDataFactory> [-GatewayName] <String>
- [-Name] <String> [-Force] [-WhatIf] [-Confirm]
+ [-Name] <String> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,21 +43,6 @@ True
 This command removes the node named "Node1" from the gateway named "Gateway1" in the data factory named "TestADF".
 
 ## PARAMETERS
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DataFactoryName
 The data factory name.
@@ -149,6 +134,21 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
@@ -165,16 +165,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 System.String
 
-
 ## OUTPUTS
 
 ### System.Boolean
-
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories

@@ -26,6 +26,9 @@ Gets information about logical gateways in Azure Data Factory.
 ### [Get-AzureRmDataFactoryGatewayAuthKey](Get-AzureRmDataFactoryGatewayAuthKey.md)
 Gets gateway auth key for an Azure Data Factory.
 
+### [Get-AzureRmDataFactoryGatewayExtended](Get-AzureRmDataFactoryGatewayExtended.md)
+Gets information about logical (multi-nodes) gateways in Azure Data Factory.
+
 ### [Get-AzureRmDataFactoryHub](Get-AzureRmDataFactoryHub.md)
 Gets information about hubs in Azure Data Factory.
 
@@ -77,6 +80,9 @@ Removes a dataset from Azure Data Factory.
 ### [Remove-AzureRmDataFactoryGateway](Remove-AzureRmDataFactoryGateway.md)
 Removes a gateway from Azure Data Factory.
 
+### [Remove-AzureRmDataFactoryGatewayExtendedNode](Remove-AzureRmDataFactoryGatewayExtendedNode.md)
+Removes specified node from the gateway in the Azure Data Factory.
+
 ### [Remove-AzureRmDataFactoryHub](Remove-AzureRmDataFactoryHub.md)
 Removes a hub from Azure Data Factory.
 
@@ -94,6 +100,15 @@ Downloads log files from Azure HDInsight processing.
 
 ### [Set-AzureRmDataFactoryGateway](Set-AzureRmDataFactoryGateway.md)
 Sets the description for a gateway in Azure Data Factory.
+
+### [Set-AzureRmDataFactoryGatewayExtended](Set-AzureRmDataFactoryGatewayExtended.md)
+Sets the description or scheduled upgrade time for a gateway in Azure Data Factory.
+
+### [Set-AzureRmDataFactoryGatewayExtendedCredentials](Set-AzureRmDataFactoryGatewayExtendedCredentials.md)
+Sets credentials to synced state for specified gateway in Azure Data Factory.
+
+### [Set-AzureRmDataFactoryGatewayExtendedNode](Set-AzureRmDataFactoryGatewayExtendedNode.md)
+Sets the limit of concurrent jobs for the specified gateway node in Azure Data Factory.
 
 ### [Set-AzureRmDataFactoryPipelineActivePeriod](Set-AzureRmDataFactoryPipelineActivePeriod.md)
 Configures the active period for data slices.
