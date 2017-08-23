@@ -50,5 +50,12 @@ namespace Microsoft.Azure.Commands.DataFactories.Test
         {
             RunPowerShellTest("Test-DataFactoryGatewayWithDataFactoryParameter");
         }
+
+        [Fact(Skip = "test takes too long (more than 5 sec)")]
+        [Trait(Category.AcceptanceType, Category.CheckIn)]
+        public void TestDataFactoryGatewayExtendedOperations()
+        {
+            RunPowerShellTest("Test-DataFactoryGatewayExtended");
+        }
     }
 }

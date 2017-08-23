@@ -4,40 +4,43 @@ online version:
 schema: 2.0.0
 ---
 
-# New-AzureRmDataFactoryGatewayAuthKey
+# Remove-AzureRmDataFactoryGatewayExtendedNode
 
 ## SYNOPSIS
-Creates auth key for an Azure Data Factory Gateway.
+Removes specified node from the gateway in the Azure Data Factory.
 
 ## SYNTAX
 
 ### ByFactoryName (Default)
 ```
-New-AzureRmDataFactoryGatewayAuthKey [-DataFactoryName] <String> [-GatewayName] <String> [-KeyName] <String>
- [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzureRmDataFactoryGatewayExtendedNode [-DataFactoryName] <String> [-GatewayName] <String>
+ [-Name] <String> [-Force] [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
-New-AzureRmDataFactoryGatewayAuthKey -InputObject <PSDataFactory> [-GatewayName] <String> [-KeyName] <String>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzureRmDataFactoryGatewayExtendedNode [-InputObject] <PSDataFactory> [-GatewayName] <String>
+ [-Name] <String> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-AzureRmDataFactoryGatewayAuthKey** cmdlet creates gateway auth key for a specified Azure Data Factory gateway.
-You register the gateway with a cloud service by using this key.
+The **Remove-AzureRmDataFactoryGatewayExtendedNode** cmdlet removes the specified node from the gateway in the Azure Data Factory.
 
 ## EXAMPLES
 
-### Example 1: Creates a gateway auth key for Key1
+### Example 1
 ```
-PS C:\> New-AzureRmDataFactoryGatewayAuthKey -ResourceGroup ADFResource -GatewayName 'MyGateway' -DataFactoryName MyADF -KeyName key1
-Key1 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@BH0EV9hu/o2IYGQzfYYD203XhdS6Tty
-       fkYwYFbG6wBU=
-Key2 :
+PS C:\>  Remove-AzureRmDataF
+actoryGatewayExtendedNode -ResourceGroupName ADFResource -DataFactoryName TestADF -GatewayName Gateway1 -Name Node1
+
+Removing the node 'Node1' of gateway 'Gateway1' in the data factory 'TestADF'.
+Are you sure you want to remove the node 'Node1' of gateway 'Gateway1' in the data factory
+'TestADF'?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+True
 ```
 
-This command creates a gateway auth key of Key1 for the data factory gateway named MyGateway.
+This command removes the node named "Node1" from the gateway named "Gateway1" in the data factory named "TestADF".
 
 ## PARAMETERS
 
@@ -53,6 +56,21 @@ Required: True
 Position: 1
 Default value: None
 Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Force
+Don't ask for confirmation.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -72,20 +90,22 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-The data factory object.```yaml
+The data factory object.
+
+```yaml
 Type: PSDataFactory
 Parameter Sets: ByFactoryObject
 Aliases: DataFactory
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KeyName
-The name of gateway auth key to be regenerated, either 'key1' or 'key2'.
+### -Name
+The data factory gateway node name.
 
 ```yaml
 Type: String
@@ -130,7 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +175,7 @@ System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
+### System.Boolean
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories
@@ -162,5 +183,11 @@ System.String
 ## RELATED LINKS
 
 [New-AzureRmDataFactoryGateway](./New-AzureRmDataFactoryGateway.md)
-[Get-AzureRmDataFactoryGatewayAuthKey](./Get-AzureRmDataFactoryGatewayAuthKey.md)
 
+[Get-AzureRmDataFactoryGatewayExtended](./Get-AzureRmDataFactoryGatewayExtended.md)
+
+[Set-AzureRmDataFactoryGatewayExtended](./Set-AzureRmDataFactoryGatewayExtended.md)
+
+[Set-AzureRmDataFactoryGatewayExtendedNode](./Set-AzureRmDataFactoryGatewayExtendedNode.md)
+
+[Set-AzureRmDataFactoryGatewayExtendedCredentials](./Set-AzureRmDataFactoryGatewayExtendedCredentials.md)

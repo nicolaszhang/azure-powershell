@@ -26,6 +26,10 @@ namespace Microsoft.Azure.Commands.DataFactories
 
         public const string Gateway = "AzureRmDataFactoryGateway";
 
+        public const string GatewayExtended = "AzureRmDataFactoryGatewayExtended";
+        public const string GatewayExtendedNode = "AzureRmDataFactoryGatewayExtendedNode";
+        public const string GatewayExtendedCredentials = "AzureRmDataFactoryGatewayExtendedCredentials";
+
         public const string ActivityWindows = "AzureRmDataFactoryActivityWindow";
 
         public const string GatewayKey = "AzureRmDataFactoryGatewayKey";

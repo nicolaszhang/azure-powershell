@@ -1,0 +1,413 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVz9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "38b9d817-2745-4cc1-8777-39433c41433c"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"PSTestGW\",\r\n  \"properties\": {\r\n    \"description\": \"\",\r\n    \"hostServiceUri\": \"https://testuser03.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n    \"dataFactoryName\": \"pstestdf\",\r\n    \"status\": \"Limited\",\r\n    \"capabilities\": {\r\n      \"serviceBusConnected\": \"True\",\r\n      \"httpsPortEnabled\": \"True\",\r\n      \"credentialInSync\": \"False\",\r\n      \"connectedToResourceManager\": \"True\",\r\n      \"nodeEnabled\": \"True\"\r\n    },\r\n    \"versionStatus\": \"UpToDate\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"version\": \"2.12.6414.2\",\r\n    \"createTime\": \"2017-08-21T02:32:20.2392703Z\",\r\n    \"registerTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n    \"lastConnectTime\": \"2017-08-21T04:54:25.1009845Z\",\r\n    \"lastUpgradeResult\": \"\",\r\n    \"multiNodeSupportEnabled\": true,\r\n    \"nodes\": [\r\n      {\r\n        \"nodeName\": \"Node1\",\r\n        \"machineName\": \"testuser03\",\r\n        \"isActiveDispatcher\": true,\r\n        \"hostServiceUri\": \"https://testuser03.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n        \"status\": \"Online\",\r\n        \"capabilities\": {\r\n          \"serviceBusConnected\": \"True\",\r\n          \"httpsPortEnabled\": \"True\",\r\n          \"credentialInSync\": \"False\",\r\n          \"connectedToResourceManager\": \"True\",\r\n          \"nodeEnabled\": \"True\"\r\n        },\r\n        \"versionStatus\": \"UpToDate\",\r\n        \"version\": \"2.12.6414.2\",\r\n        \"createTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n        \"registerTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n        \"lastConnectTime\": \"2017-08-21T04:54:25.1009845Z\",\r\n        \"lastUpgradeResult\": \"None\",\r\n        \"maxConcurrentJobs\": \"48\",\r\n        \"availableMemory\": \"25901MB\",\r\n        \"cpuUtilization\": \"0%\",\r\n        \"network\": \"0KBps/0KBps\",\r\n        \"limitConcurrentJobs\": \"8\",\r\n        \"runningConcurrentJobs\": \"0\"\r\n      },\r\n      {\r\n        \"nodeName\": \"Node2\",\r\n        \"machineName\": \"testuser02\",\r\n        \"isActiveDispatcher\": false,\r\n        \"hostServiceUri\": \"https://testuser02.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n        \"status\": \"Online\",\r\n        \"capabilities\": {\r\n          \"serviceBusConnected\": \"True\",\r\n          \"httpsPortEnabled\": \"True\",\r\n          \"credentialInSync\": \"False\",\r\n          \"connectedToResourceManager\": \"True\",\r\n          \"nodeEnabled\": \"True\"\r\n        },\r\n        \"versionStatus\": \"UpToDate\",\r\n        \"version\": \"2.12.6414.2\",\r\n        \"createTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"registerTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"lastConnectTime\": \"2017-08-21T04:54:03.6675502Z\",\r\n        \"lastUpgradeResult\": \"None\",\r\n        \"maxConcurrentJobs\": \"30\",\r\n        \"availableMemory\": \"8170MB\",\r\n        \"cpuUtilization\": \"14%\",\r\n        \"network\": \"2KBps/1KBps\",\r\n        \"limitConcurrentJobs\": \"15\",\r\n        \"runningConcurrentJobs\": \"0\"\r\n      }\r\n    ],\r\n    \"isCredentialSyncFailed\": true,\r\n    \"nodeCommunicationChannelEncryptionMode\": \"NonEncryption\",\r\n    \"isOnPremCredentialEnabled\": true,\r\n    \"serviceUrls\": [\r\n      \"wu.frontend.int.clouddatahub-int.net\",\r\n      \"*.servicebus.windows.net\"\r\n    ],\r\n    \"scheduledUpgradeTime\": \"09:08:07\"\r\n  },\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "2450"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "f3886426-ec84-4986-b6ec-4d7497df8db8"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14994"
+        ],
+        "x-ms-correlation-request-id": [
+          "5e3c9cf9-a4c4-4976-a386-0da1f118d89b"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045425Z:5e3c9cf9-a4c4-4976-a386-0da1f118d89b"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:25 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVz9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "765c295c-1575-40ef-893c-4b2b7bddce91"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"PSTestGW\",\r\n  \"properties\": {\r\n    \"description\": \"\",\r\n    \"dataFactoryName\": \"pstestdf\",\r\n    \"status\": \"Offline\",\r\n    \"capabilities\": {},\r\n    \"versionStatus\": \"None\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"version\": \"2.12.6414.2\",\r\n    \"createTime\": \"2017-08-21T02:32:20.2392703Z\",\r\n    \"multiNodeSupportEnabled\": true,\r\n    \"nodes\": [\r\n      {\r\n        \"nodeName\": \"Node2\",\r\n        \"machineName\": \"testuser02\",\r\n        \"isActiveDispatcher\": false,\r\n        \"hostServiceUri\": \"https://testuser02.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n        \"status\": \"Online\",\r\n        \"capabilities\": {\r\n          \"serviceBusConnected\": \"True\",\r\n          \"httpsPortEnabled\": \"True\",\r\n          \"credentialInSync\": \"False\",\r\n          \"connectedToResourceManager\": \"True\",\r\n          \"nodeEnabled\": \"True\"\r\n        },\r\n        \"versionStatus\": \"UpToDate\",\r\n        \"version\": \"2.12.6414.2\",\r\n        \"createTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"registerTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"lastConnectTime\": \"2017-08-21T04:54:42.2888033Z\",\r\n        \"lastUpgradeResult\": \"None\",\r\n        \"maxConcurrentJobs\": \"30\",\r\n        \"availableMemory\": \"8218MB\",\r\n        \"cpuUtilization\": \"13%\",\r\n        \"network\": \"4KBps/1KBps\",\r\n        \"limitConcurrentJobs\": \"15\",\r\n        \"runningConcurrentJobs\": \"0\"\r\n      }\r\n    ],\r\n    \"isCredentialSyncFailed\": false,\r\n    \"nodeCommunicationChannelEncryptionMode\": \"NonEncryption\",\r\n    \"isOnPremCredentialEnabled\": true,\r\n    \"serviceUrls\": [\r\n      \"wu.frontend.int.clouddatahub-int.net\",\r\n      \"*.servicebus.windows.net\"\r\n    ],\r\n    \"scheduledUpgradeTime\": \"09:08:07\"\r\n  },\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "1387"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "fb1ab55d-ec9c-43de-b98d-472b10122326"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14993"
+        ],
+        "x-ms-correlation-request-id": [
+          "a051fe16-f1cb-4389-bf02-81bf84fd46a0"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045444Z:a051fe16-f1cb-4389-bf02-81bf84fd46a0"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:44 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW/updatenode?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVy91cGRhdGVub2RlP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "POST",
+      "RequestBody": "{\r\n  \"nodeName\": \"Node1\",\r\n  \"limitConcurrentJobs\": 9\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Content-Length": [
+          "56"
+        ],
+        "x-ms-client-request-id": [
+          "a8cbd2af-8a38-4fd0-aac9-f2bd04645fd7"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "62d7d6ff-d9b8-473d-82dd-809280e9adad"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1199"
+        ],
+        "x-ms-correlation-request-id": [
+          "3181395a-a188-4cf8-af6d-615c7e15517f"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045426Z:3181395a-a188-4cf8-af6d-615c7e15517f"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:25 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW/synccredential?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVy9zeW5jY3JlZGVudGlhbD9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "POST",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "82de552e-11ee-404f-8fae-ab4b09dbd4f8"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "ad3a7007-7a75-4abd-890c-c381fc901df1"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1198"
+        ],
+        "x-ms-correlation-request-id": [
+          "5a53d937-d690-4482-ba7c-156c5f5ebae2"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045426Z:5a53d937-d690-4482-ba7c-156c5f5ebae2"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:26 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVz9hcGktdmVyc2lvbj0yMDE1LTEwLTAx",
+      "RequestMethod": "PATCH",
+      "RequestBody": "{\r\n  \"name\": \"PSTestGW\",\r\n  \"properties\": {\r\n    \"scheduledUpgradeTime\": \"09:08:07\",\r\n    \"multiNodeSupportEnabled\": false\r\n  }\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Content-Length": [
+          "130"
+        ],
+        "x-ms-client-request-id": [
+          "ecb502f4-f276-4cac-860e-3dc7920bb752"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"name\": \"PSTestGW\",\r\n  \"properties\": {\r\n    \"description\": \"\",\r\n    \"hostServiceUri\": \"https://testuser03.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n    \"dataFactoryName\": \"pstestdf\",\r\n    \"status\": \"Online\",\r\n    \"capabilities\": {\r\n      \"serviceBusConnected\": \"True\",\r\n      \"httpsPortEnabled\": \"True\",\r\n      \"credentialInSync\": \"True\",\r\n      \"connectedToResourceManager\": \"True\",\r\n      \"nodeEnabled\": \"True\"\r\n    },\r\n    \"versionStatus\": \"UpToDate\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"version\": \"2.12.6414.2\",\r\n    \"createTime\": \"2017-08-21T02:32:20.2392703Z\",\r\n    \"registerTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n    \"lastConnectTime\": \"2017-08-21T04:54:25.1009845Z\",\r\n    \"lastUpgradeResult\": \"\",\r\n    \"multiNodeSupportEnabled\": true,\r\n    \"nodes\": [\r\n      {\r\n        \"nodeName\": \"Node1\",\r\n        \"machineName\": \"testuser03\",\r\n        \"isActiveDispatcher\": true,\r\n        \"hostServiceUri\": \"https://testuser03.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n        \"status\": \"Online\",\r\n        \"capabilities\": {\r\n          \"serviceBusConnected\": \"True\",\r\n          \"httpsPortEnabled\": \"True\",\r\n          \"credentialInSync\": \"True\",\r\n          \"connectedToResourceManager\": \"True\",\r\n          \"nodeEnabled\": \"True\"\r\n        },\r\n        \"versionStatus\": \"UpToDate\",\r\n        \"version\": \"2.12.6414.2\",\r\n        \"createTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n        \"registerTime\": \"2017-08-21T03:09:37.1945699Z\",\r\n        \"lastConnectTime\": \"2017-08-21T04:54:25.1009845Z\",\r\n        \"lastUpgradeResult\": \"None\",\r\n        \"maxConcurrentJobs\": \"48\",\r\n        \"availableMemory\": \"25901MB\",\r\n        \"cpuUtilization\": \"0%\",\r\n        \"network\": \"0KBps/0KBps\",\r\n        \"limitConcurrentJobs\": \"9\",\r\n        \"runningConcurrentJobs\": \"0\"\r\n      },\r\n      {\r\n        \"nodeName\": \"Node2\",\r\n        \"machineName\": \"testuser02\",\r\n        \"isActiveDispatcher\": false,\r\n        \"hostServiceUri\": \"https://testuser02.somefakecorp.com:8050/HostServiceRemote.svc/\",\r\n        \"status\": \"Online\",\r\n        \"capabilities\": {\r\n          \"serviceBusConnected\": \"True\",\r\n          \"httpsPortEnabled\": \"True\",\r\n          \"credentialInSync\": \"False\",\r\n          \"connectedToResourceManager\": \"True\",\r\n          \"nodeEnabled\": \"True\"\r\n        },\r\n        \"versionStatus\": \"UpToDate\",\r\n        \"version\": \"2.12.6414.2\",\r\n        \"createTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"registerTime\": \"2017-08-21T03:19:06.0442703Z\",\r\n        \"lastConnectTime\": \"2017-08-21T04:54:03.6675502Z\",\r\n        \"lastUpgradeResult\": \"None\",\r\n        \"maxConcurrentJobs\": \"30\",\r\n        \"availableMemory\": \"8170MB\",\r\n        \"cpuUtilization\": \"14%\",\r\n        \"network\": \"2KBps/1KBps\",\r\n        \"limitConcurrentJobs\": \"15\",\r\n        \"runningConcurrentJobs\": \"0\"\r\n      }\r\n    ],\r\n    \"isCredentialSyncFailed\": false,\r\n    \"nodeCommunicationChannelEncryptionMode\": \"NonEncryption\",\r\n    \"isOnPremCredentialEnabled\": true,\r\n    \"serviceUrls\": [\r\n      \"wu.frontend.int.clouddatahub-int.net\",\r\n      \"*.servicebus.windows.net\"\r\n    ],\r\n    \"scheduledUpgradeTime\": \"09:08:07\"\r\n  },\r\n  \"id\": \"/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW\"\r\n}",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "2448"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "36ef6f8e-3198-45fe-917a-7e83986573fd"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1197"
+        ],
+        "x-ms-correlation-request-id": [
+          "1c09d5c4-fc5b-4915-a069-b83057d0cf8c"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045427Z:1c09d5c4-fc5b-4915-a069-b83057d0cf8c"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:26 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/41fcbc45-c594-4152-a8f1-fcbcd6452aea/resourcegroups/PSTestRG/providers/Microsoft.DataFactory/datafactories/PSTestDF/gateways/PSTestGW/removenode?api-version=2015-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNDFmY2JjNDUtYzU5NC00MTUyLWE4ZjEtZmNiY2Q2NDUyYWVhL3Jlc291cmNlZ3JvdXBzL1BTVGVzdFJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YUZhY3RvcnkvZGF0YWZhY3Rvcmllcy9QU1Rlc3RERi9nYXRld2F5cy9QU1Rlc3RHVy9yZW1vdmVub2RlP2FwaS12ZXJzaW9uPTIwMTUtMTAtMDE=",
+      "RequestMethod": "POST",
+      "RequestBody": "{\r\n  \"nodeName\": \"Node1\"\r\n}",
+      "RequestHeaders": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Content-Length": [
+          "27"
+        ],
+        "x-ms-client-request-id": [
+          "e85118d9-0686-4a67-b480-b16808838487"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.1648.0",
+          "OSName/Windows_10_Enterprise",
+          "OSVersion/6.3.14393",
+          "Microsoft.Azure.Management.DataFactories.DataFactoryManagementExtendedClient/4.13.0"
+        ]
+      },
+      "ResponseBody": "",
+      "ResponseHeaders": {
+        "Content-Length": [
+          "0"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "64606e08-fedf-4c6f-8449-34dd337767d2"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1196"
+        ],
+        "x-ms-correlation-request-id": [
+          "9308aa19-0ed3-4610-86f5-9746ed876f42"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20170821T045444Z:9308aa19-0ed3-4610-86f5-9746ed876f42"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Mon, 21 Aug 2017 04:54:43 GMT"
+        ],
+        "Server": [
+          "Microsoft-IIS/8.5"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ]
+      },
+      "StatusCode": 200
+    }
+  ],
+  "Names": {},
+  "Variables": {
+    "SubscriptionId": "41fcbc45-c594-4152-a8f1-fcbcd6452aea"
+  }
+}

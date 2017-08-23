@@ -19,8 +19,7 @@ Get-AzureRmDataFactoryGatewayAuthKey [-DataFactoryName] <String> [-GatewayName] 
 
 ### ByFactoryObject
 ```
-Get-AzureRmDataFactoryGatewayAuthKey [-DataFactory] <PSDataFactory> [-GatewayName] <String>
- [<CommonParameters>]
+Get-AzureRmDataFactoryGatewayAuthKey -InputObject <PSDataFactory> [-GatewayName] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,21 +40,6 @@ Key2 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd645
 This command gets gateway auth key for the data factory gateway named MyGateway.
 
 ## PARAMETERS
-
-### -DataFactory
-The data factory object.
-
-```yaml
-Type: PSDataFactory
-Parameter Sets: ByFactoryObject
-Aliases: 
-
-Required: True
-Position: 0
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
 
 ### -DataFactoryName
 The data factory name.
@@ -84,6 +68,19 @@ Required: True
 Position: 2
 Default value: None
 Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InputObject
+The data factory object.```yaml
+Type: PSDataFactory
+Parameter Sets: ByFactoryObject
+Aliases: DataFactory
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 

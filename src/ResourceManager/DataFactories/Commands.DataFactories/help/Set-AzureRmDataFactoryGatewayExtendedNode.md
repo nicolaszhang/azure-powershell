@@ -4,40 +4,37 @@ online version:
 schema: 2.0.0
 ---
 
-# New-AzureRmDataFactoryGatewayAuthKey
+# Set-AzureRmDataFactoryGatewayExtendedNode
 
 ## SYNOPSIS
-Creates auth key for an Azure Data Factory Gateway.
+Sets the limit of concurrent jobs for a gateway node in Azure Data Factory.
 
 ## SYNTAX
 
 ### ByFactoryName (Default)
 ```
-New-AzureRmDataFactoryGatewayAuthKey [-DataFactoryName] <String> [-GatewayName] <String> [-KeyName] <String>
- [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-AzureRmDataFactoryGatewayExtendedNode [-DataFactoryName] <String> [-GatewayName] <String> [-Name] <String>
+ [-LimitConcurrentJobs] <Int32> [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
-New-AzureRmDataFactoryGatewayAuthKey -InputObject <PSDataFactory> [-GatewayName] <String> [-KeyName] <String>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-AzureRmDataFactoryGatewayExtendedNode [-InputObject] <PSDataFactory> [-GatewayName] <String>
+ [-Name] <String> [-LimitConcurrentJobs] <Int32> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-AzureRmDataFactoryGatewayAuthKey** cmdlet creates gateway auth key for a specified Azure Data Factory gateway.
-You register the gateway with a cloud service by using this key.
+The **Set-AzureRmDataFactoryGatewayExtendedNode** cmdlet sets the limit of concurrent jobs for the specified gateway node in Azure Data Factory.
 
 ## EXAMPLES
 
-### Example 1: Creates a gateway auth key for Key1
+### Example 1
 ```
-PS C:\> New-AzureRmDataFactoryGatewayAuthKey -ResourceGroup ADFResource -GatewayName 'MyGateway' -DataFactoryName MyADF -KeyName key1
-Key1 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@BH0EV9hu/o2IYGQzfYYD203XhdS6Tty
-       fkYwYFbG6wBU=
-Key2 :
+PS C:\> Set-AzureRmDataFactoryGatewayExtendedNode -ResourceGroupName ADFResource -DataFactoryName TestADF -GatewayName Gateway1 -Name Node1 -LimitConcurrentJobs 19
+True
 ```
 
-This command creates a gateway auth key of Key1 for the data factory gateway named MyGateway.
+This command sets the limit of concurrent jobs to 19 for Node1 of the logical gateway named Gateway1 in the data factory named TestADF in the resource group named ADFResource.
 
 ## PARAMETERS
 
@@ -72,20 +69,37 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-The data factory object.```yaml
+The data factory object.
+
+```yaml
 Type: PSDataFactory
 Parameter Sets: ByFactoryObject
 Aliases: DataFactory
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KeyName
-The name of gateway auth key to be regenerated, either 'key1' or 'key2'.
+### -LimitConcurrentJobs
+The limit concurrent jobs to set.
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: 4
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The name of the gateway node to update.
 
 ```yaml
 Type: String
@@ -130,7 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +169,7 @@ System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
+### System.Boolean
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories
@@ -162,5 +177,11 @@ System.String
 ## RELATED LINKS
 
 [New-AzureRmDataFactoryGateway](./New-AzureRmDataFactoryGateway.md)
-[Get-AzureRmDataFactoryGatewayAuthKey](./Get-AzureRmDataFactoryGatewayAuthKey.md)
 
+[Get-AzureRmDataFactoryGatewayExtended](./Get-AzureRmDataFactoryGatewayExtended.md)
+
+[Remove-AzureRmDataFactoryGatewayExtendedNode](./Remove-AzureRmDataFactoryGatewayExtendedNode.md)
+
+[Set-AzureRmDataFactoryGatewayExtended](./Set-AzureRmDataFactoryGatewayExtended.md)
+
+[Set-AzureRmDataFactoryGatewayExtendedCredentials](./Set-AzureRmDataFactoryGatewayExtendedCredentials.md)

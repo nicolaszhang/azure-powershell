@@ -4,40 +4,42 @@ online version:
 schema: 2.0.0
 ---
 
-# New-AzureRmDataFactoryGatewayAuthKey
+# Set-AzureRmDataFactoryGatewayExtendedCredentials
 
 ## SYNOPSIS
-Creates auth key for an Azure Data Factory Gateway.
+Sets credentials to synced state for specified gateway in Azure Data Factory.
 
 ## SYNTAX
 
 ### ByFactoryName (Default)
 ```
-New-AzureRmDataFactoryGatewayAuthKey [-DataFactoryName] <String> [-GatewayName] <String> [-KeyName] <String>
+Set-AzureRmDataFactoryGatewayExtendedCredentials [-DataFactoryName] <String> [-Name] <String> [-Force]
  [-ResourceGroupName] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByFactoryObject
 ```
-New-AzureRmDataFactoryGatewayAuthKey -InputObject <PSDataFactory> [-GatewayName] <String> [-KeyName] <String>
+Set-AzureRmDataFactoryGatewayExtendedCredentials [-InputObject] <PSDataFactory> [-Name] <String> [-Force]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-AzureRmDataFactoryGatewayAuthKey** cmdlet creates gateway auth key for a specified Azure Data Factory gateway.
-You register the gateway with a cloud service by using this key.
+The **Set-AzureRmDataFactoryGatewayExtendedCredentials** cmdlet sets credentials to synced state for specified gateway in Azure Data Factory.
 
 ## EXAMPLES
 
-### Example 1: Creates a gateway auth key for Key1
+### Example 1 Force sync credentials of a gateway
 ```
-PS C:\> New-AzureRmDataFactoryGatewayAuthKey -ResourceGroup ADFResource -GatewayName 'MyGateway' -DataFactoryName MyADF -KeyName key1
-Key1 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@BH0EV9hu/o2IYGQzfYYD203XhdS6Tty
-       fkYwYFbG6wBU=
-Key2 :
+PS C:\> Set-AzureRmDataFactoryGatewayExtendedCredentials -ResourceGroupName ADFResource -DataFactoryName TestADF -Name Gateway1
+
+Sync credentials of the gateway 'Gateway1' in the data factory 'TestADF'.
+There might be credential loss with this command, are you sure you want to force sync credentials of the gateway
+'Gateway1' in the data factory 'TestADF'?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+True
 ```
 
-This command creates a gateway auth key of Key1 for the data factory gateway named MyGateway.
+This command sets the credentials to synced state for gateway named Gateway1 in the data factory named TestADF.
 
 ## PARAMETERS
 
@@ -56,7 +58,37 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -GatewayName
+### -Force
+Don't ask for confirmation.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+The data factory object.
+
+```yaml
+Type: PSDataFactory
+Parameter Sets: ByFactoryObject
+Aliases: DataFactory
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Name
 The data factory gateway name.
 
 ```yaml
@@ -66,34 +98,6 @@ Aliases:
 
 Required: True
 Position: 2
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -InputObject
-The data factory object.```yaml
-Type: PSDataFactory
-Parameter Sets: ByFactoryObject
-Aliases: DataFactory
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -KeyName
-The name of gateway auth key to be regenerated, either 'key1' or 'key2'.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: 3
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
@@ -130,7 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +159,7 @@ System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
+### System.Boolean
 
 ## NOTES
 * Keywords: azure, azurerm, arm, resource, management, manager, data, factories
@@ -162,5 +167,11 @@ System.String
 ## RELATED LINKS
 
 [New-AzureRmDataFactoryGateway](./New-AzureRmDataFactoryGateway.md)
-[Get-AzureRmDataFactoryGatewayAuthKey](./Get-AzureRmDataFactoryGatewayAuthKey.md)
 
+[Get-AzureRmDataFactoryGatewayExtended](./Get-AzureRmDataFactoryGatewayExtended.md)
+
+[Set-AzureRmDataFactoryGatewayExtendedNode](./Set-AzureRmDataFactoryGatewayExtendedNode.md)
+
+[Remove-AzureRmDataFactoryGatewayExtendedNode](./Remove-AzureRmDataFactoryGatewayExtendedNode.md)
+
+[Set-AzureRmDataFactoryGatewayExtended](./Set-AzureRmDataFactoryGatewayExtended.md)

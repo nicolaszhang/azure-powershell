@@ -261,4 +261,16 @@ For data factory naming restrictions, please see http://msdn.microsoft.com/en-us
   <data name="EndDateTimeNotSpecifiedForSetSliceStatus" xml:space="preserve">
     <value>EndDateTime is not specified and is set to 48 hours from StartDateTime (by default). Please use -EndDateTime parameter in Set-AzureRmDataFactorySliceStatus command if you want to specify EndDateTime.</value>
   </data>
+  <data name="DataFactoryGatewayNodeConfirmationMessage" xml:space="preserve">
+    <value>Are you sure you want to remove the node '{0}' of gateway '{1}' in the data factory '{2}'?</value>
+  </data>
+  <data name="DataFactoryGatewayNodeRemoving" xml:space="preserve">
+    <value>Removing the node '{0}' of gateway '{1}' in the data factory '{2}'.</value>
+  </data>
+  <data name="ForceSyncGatewayCredentialsConfirmationMessage" xml:space="preserve">
+    <value>There might be credential loss with this command, are you sure you want to force sync credentials of the gateway '{0}' in the data factory '{1}'?</value>
+  </data>
+  <data name="SyncingGatewayCredentialsMessage" xml:space="preserve">
+    <value>Sync credentials of the gateway '{0}' in the data factory '{1}'.</value>
+  </data>
 </root>

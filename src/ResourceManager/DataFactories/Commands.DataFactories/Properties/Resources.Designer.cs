@@ -117,6 +117,24 @@ namespace Microsoft.Azure.Commands.DataFactories.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to remove the node &apos;{0}&apos; of gateway &apos;{1}&apos; in the data factory &apos;{2}&apos;?.
+        /// </summary>
+        internal static string DataFactoryGatewayNodeConfirmationMessage {
+            get {
+                return ResourceManager.GetString("DataFactoryGatewayNodeConfirmationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removing the node &apos;{0}&apos; of gateway &apos;{1}&apos; in the data factory &apos;{2}&apos;..
+        /// </summary>
+        internal static string DataFactoryGatewayNodeRemoving {
+            get {
+                return ResourceManager.GetString("DataFactoryGatewayNodeRemoving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Removing the gateway &apos;{0}&apos; in the data factory &apos;{1}&apos;..
         /// </summary>
         internal static string DataFactoryGatewayRemoving {
@@ -241,6 +259,15 @@ namespace Microsoft.Azure.Commands.DataFactories.Properties {
         internal static string ExtractedNameFromJsonMismatchWarning {
             get {
                 return ResourceManager.GetString("ExtractedNameFromJsonMismatchWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There might be credential loss with this command, are you sure you want to force sync credentials of the gateway &apos;{0}&apos; in the data factory &apos;{1}&apos;?.
+        /// </summary>
+        internal static string ForceSyncGatewayCredentialsConfirmationMessage {
+            get {
+                return ResourceManager.GetString("ForceSyncGatewayCredentialsConfirmationMessage", resourceCulture);
             }
         }
         
@@ -459,6 +486,15 @@ namespace Microsoft.Azure.Commands.DataFactories.Properties {
         internal static string ResourceGroupNameCannotBeEmpty {
             get {
                 return ResourceManager.GetString("ResourceGroupNameCannotBeEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sync credentials of the gateway &apos;{0}&apos; in the data factory &apos;{1}&apos;..
+        /// </summary>
+        internal static string SyncingGatewayCredentialsMessage {
+            get {
+                return ResourceManager.GetString("SyncingGatewayCredentialsMessage", resourceCulture);
             }
         }
     }
