@@ -105,10 +105,10 @@ Sets the description for a gateway in Azure Data Factory.
 Sets the description or scheduled upgrade time for a gateway in Azure Data Factory.
 
 ### [Set-AzureRmDataFactoryGatewayExtendedCredentials](Set-AzureRmDataFactoryGatewayExtendedCredentials.md)
-Sets credentials to synced state for specified gateway in Azure Data Factory.
+Sets credentials to synced state for a gateway in Azure Data Factory.
 
 ### [Set-AzureRmDataFactoryGatewayExtendedNode](Set-AzureRmDataFactoryGatewayExtendedNode.md)
-Sets the limit of concurrent jobs for the specified gateway node in Azure Data Factory.
+Sets the limit of concurrent jobs for a gateway node in Azure Data Factory.
 
 ### [Set-AzureRmDataFactoryPipelineActivePeriod](Set-AzureRmDataFactoryPipelineActivePeriod.md)
 Configures the active period for data slices.

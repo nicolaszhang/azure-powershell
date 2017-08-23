@@ -7,7 +7,7 @@ schema: 2.0.0
 # Set-AzureRmDataFactoryGatewayExtendedNode
 
 ## SYNOPSIS
-Sets the limit of concurrent jobs for the specified gateway node in Azure Data Factory.
+Sets the limit of concurrent jobs for a gateway node in Azure Data Factory.
 
 ## SYNTAX
 
