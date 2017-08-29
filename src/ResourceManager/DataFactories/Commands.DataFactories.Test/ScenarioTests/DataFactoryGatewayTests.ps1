@@ -76,42 +76,42 @@ Test operations on the multinode gateways,and verify results.
 #>
 function Test-DataFactoryGatewayExtended
 {
-	$dfName = "PSTestDF"
-	$rgName= "PSTestRG"
-	$gwName = "PSTestGW"
-	$nodeName = "Node1"
-	
-	# get multi-node gateway info
-	$gw = Get-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName
-	Assert-AreEqual $gw.Name $gwname
-	Assert-AreEqual $gw.Nodes.Count 2
-	Assert-AreEqual $gw.Capabilities["credentialInSync"] $false
+    $dfName = "PSTestDF"
+    $rgName= "PSTestRG"
+    $gwName = "PSTestGW"
+    $nodeName = "Node1"
+    
+    # get multi-node gateway info
+    $gw = Get-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName
+    Assert-AreEqual $gw.Name $gwname
+    Assert-AreEqual $gw.Nodes.Count 2
+    Assert-AreEqual $gw.Capabilities["credentialInSync"] $false
 
-	# set one node's LimitConcurrentJobs.
-	$result = Set-AzureRmDataFactoryGatewayExtendedNode -ResourceGroupName $rgName -DataFactoryName $dfName -GatewayName $gwName -Name $nodeName -LimitConcurrentJobs 9
-	Assert-AreEqual $result $true
+    # set one node's LimitConcurrentJobs.
+    $result = Set-AzureRmDataFactoryGatewayExtendedNode -ResourceGroupName $rgName -DataFactoryName $dfName -GatewayName $gwName -Name $nodeName -LimitConcurrentJobs 9
+    Assert-AreEqual $result $true
 
-	# force sync credentials
-	$result = Set-AzureRmDataFactoryGatewayExtendedCredentials -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName -Force
-	Assert-AreEqual $result $true
+    # force sync credentials
+    $result = Set-AzureRmDataFactoryGatewayExtendedCredentials -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName -Force
+    Assert-AreEqual $result $true
 
-	# set gateway and verify
-	$scheduledUpgradeTime = "09:08:07"
-	$gw = Set-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfname -Name $gwname -ScheduledUpgradeTime $scheduledUpgradeTime
-	Assert-AreEqual $gw.ScheduledUpgradeTime $scheduledUpgradeTime
-	$node = $gw.Nodes | where {$_.Name -eq $nodeName}
-	
-	Assert-AreEqual $node.LimitConcurrentJobs 9
-	Assert-AreEqual $gw.Capabilities["credentialInSync"] $true
+    # set gateway and verify
+    $scheduledUpgradeTime = "09:08:07"
+    $gw = Set-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfname -Name $gwname -ScheduledUpgradeTime $scheduledUpgradeTime
+    Assert-AreEqual $gw.ScheduledUpgradeTime $scheduledUpgradeTime
+    $node = $gw.Nodes | where {$_.Name -eq $nodeName}
+    
+    Assert-AreEqual $node.LimitConcurrentJobs 9
+    Assert-AreEqual $gw.Capabilities["credentialInSync"] $true
 
-	# remove one node and verify
-	$result = Remove-AzureRmDataFactoryGatewayExtendedNode -ResourceGroupName $rgName -DataFactoryName $dfName -GatewayName $gwName -Name $nodeName -Force
-	Assert-AreEqual $result $true
+    # remove one node and verify
+    $result = Remove-AzureRmDataFactoryGatewayExtendedNode -ResourceGroupName $rgName -DataFactoryName $dfName -GatewayName $gwName -Name $nodeName -Force
+    Assert-AreEqual $result $true
 
-	$gw = Get-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName
-	Assert-AreEqual $gw.Name $gwname
-	Assert-AreEqual $gw.Nodes.Count 1
-	Assert-AreEqual $gw.Nodes[0].Name "Node2"
+    $gw = Get-AzureRmDataFactoryGatewayExtended -ResourceGroupName $rgName -DataFactoryName $dfName -Name $gwName
+    Assert-AreEqual $gw.Name $gwname
+    Assert-AreEqual $gw.Nodes.Count 1
+    Assert-AreEqual $gw.Nodes[0].Name "Node2"
 }
 
 <#
